@@ -1,5 +1,11 @@
 # Rokid Outlook HUD
 
+
+> **🔵 Connectivity Update — May 2025**
+> The glasses connection has been migrated from **raw TCP sockets** to
+> **Bluetooth via the Rokid AI glasses SDK** (`pod 'RokidSDK' ~> 1.10.2`).
+> No Wi-Fi port forwarding is needed. See **SDK Setup** below.
+
 iOS app that bridges **Microsoft Outlook** (email + calendar + contacts) with **Rokid AR glasses** — see your inbox, events, and contacts on your heads-up display in real time.
 
 ```
@@ -9,7 +15,7 @@ iOS app that bridges **Microsoft Outlook** (email + calendar + contacts) with **
          ↓  Microsoft Graph API v1.0
   graph.microsoft.com
          ↓  email · calendar · contacts
-  iPhone ──TCP :8099──▶ Rokid Glasses (live HUD)
+  iPhone ──Bluetooth/RokidSDK──▶ Rokid Glasses (live HUD)
 ```
 
 ## What appears on the glasses

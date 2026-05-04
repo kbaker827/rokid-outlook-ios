@@ -32,7 +32,7 @@ Instant alerts fire on your glasses for:
 - **Flagged** emails
 - **Calendar events** starting soon (configurable minutes)
 
-## Glasses → Phone commands (TCP :8099)
+## Voice commands from the glasses
 
 | Command | Result |
 |---------|--------|
@@ -107,7 +107,7 @@ Grant admin consent if you're an admin (or ask IT).
 
 ### Step 3 — Build and run
 
-1. Open `RokidOutlook.xcodeproj` in Xcode 15+
+1. Open `RokidOutlook.xcworkspace` in Xcode 15+ (after running `pod install`) 15+
 2. Set your team in Signing & Capabilities
 3. Build and run on iPhone (iOS 17+)
 4. In **Settings**: paste Client ID, set Tenant ID (`common` for personal accounts)
@@ -140,4 +140,4 @@ Grant admin consent if you're an admin (or ask IT).
 - Xcode 15+
 - Microsoft account (personal or work/school with Exchange/Outlook)
 - Azure App Registration (free — see Setup above)
-- Rokid AR glasses on the same Wi-Fi (optional — works standalone as an Outlook dashboard)
+- Rokid AI glasses (paired via Bluetooth — no Wi-Fi needed) (optional — works standalone as an Outlook dashboard)
